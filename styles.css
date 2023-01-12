@@ -1,0 +1,74 @@
+
+.inline-block{
+    display: inline-block;
+       vertical-align: top;
+   }
+   .logo{
+       width: 23%;
+       padding: 1%;
+       text-align: center;
+   }
+   nav{
+       width: 90%;
+       padding: 1%;
+       background-color: #D6CCC2;
+    
+   }
+  header ul{
+       width: 20%;
+       margin-left: auto;
+   }
+
+   .herolmg{
+       height: 600px;
+       padding:25px;
+   }
+   .content{
+    width: 500px;
+    margin: 0 auto;
+   }
+  
+   footer{
+    background-color: #D6CCC2;
+   padding: 25px;
+
+ }
+ footer ul{
+    width: 20%;
+    margin-right: auto;
+ }
+ ul>li{
+    padding: 15px
+ }
+.flexContainer{
+   width: 33%;
+ display: flex;
+ margin: 0 auto;
+ padding: 3%;
+
+}
+
+body{
+    background-color: #EDEDE9;
+}
+.workGrid{
+    display: grid;
+    grid-template-columns:100px 500px; 
+    grid-template-rows: 1fr 1fr 1fr;
+   justify-content: space-evenly;
+   padding: 0 25%;
+}
+@media only screen and (max-width: 600){
+    .flexContainer{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+    } 
+ .workGrid{
+     display: grid;
+     grid-template-columns: 100px 500px 100px 500px;
+     grid-template-rows: 1fr;
+     justify-content: space-evenly;
+     padding: 0 1%;
+ }
+ }
