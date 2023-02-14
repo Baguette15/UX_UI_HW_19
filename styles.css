@@ -41,16 +41,14 @@
     padding: 15px
  }
 .flexContainer{
-   width: 33%;
+  width: 33%;
  display: flex;
- margin: 0 auto;
+flex-direction: column;
  padding: 3%;
-
+ -ms-flex-align: stretch;
+margin: auto;
 }
 
-body{
-    background-color: #EDEDE9;
-}
 .workGrid{
     display: grid;
     grid-template-columns:100px 500px; 
@@ -58,17 +56,28 @@ body{
    justify-content: space-evenly;
    padding: 0 25%;
 }
+
+
+body{
+    background-color: #EDEDE9;
+}
+
+
+
+
+
+
 @media only screen and (max-width: 600){
     .flexContainer{
      width: 100%;
      display: flex;
      flex-direction: column;
     } 
- .workGrid{
-     display: grid;
-     grid-template-columns: 100px 500px 100px 500px;
-     grid-template-rows: 1fr;
-     justify-content: space-evenly;
-     padding: 0 1%;
- }
+    .workGrid{
+        display: grid;
+        grid-template-columns: 100px 500px 100px 500px;
+        grid-template-rows: 1fr;
+        justify-content: space-evenly;
+        padding: 0 1%;
+    }
  }
